@@ -1,5 +1,5 @@
 # BHPC Automation System | Full-Stack Java Developer
-# Windows Desktop Application for Power Distribution Management
+Windows Desktop Application for Power Distribution Management
 
 Architected and developed a full-stack desktop application using Java (JDK 1.6) frontend and Oracle 11g database to automate payslip processing, employee management, and hydroelectricity distribution reporting.
 Engineered database connectivity using both Microsoft ODBC for Oracle and Oracle JDBC-ODBC drivers, ensuring reliable data flow between the Java GUI and Oracle backend.
