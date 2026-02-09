@@ -1,0 +1,2 @@
+select dname, employee.ename,employee.eAppntmt,employee.edesg from employee,department where eid='EMP-1017' and department.did=employee.edid
+/
