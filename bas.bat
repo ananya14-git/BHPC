@@ -1,0 +1,1 @@
+sqlplus bas/123 @bas.sql

@@ -1,0 +1,77 @@
+ create table employee
+  (eId varchar2(5) primary key,
+  eName varchar2(50) not null,
+  eDesg varchar2(10),
+  eDid varchar2(5),
+  eDob date,
+  eFatherName varchar2(50),
+  ePhoneNo varchar2(10) unique,
+  email varchar2(20) unique,
+  eAppntmt char(1),
+  eCtgry char(1),
+  eGen char(1),
+  eMstatus char(1),
+  eBgrp varchar2(3),
+  eDoj date,
+  ePan varchar2(10) unique,
+  eAdd varchar2(50) not null);
+
+
+ create table department
+  (dId varchar2(5) primary key,
+  dName varchar2(30) not null,
+  dManager varchar2(50)
+  );
+
+
+ create table leave
+  ( eId varchar2(5) ,
+  leaveId varchar2(5),
+  fromDate date,
+  toDate date,
+  lvType varchar2(30),
+  noDays number(2)
+  );
+
+
+ create table attendence
+  (eId varchar2(5),
+  dId varchar2(5),
+  attenDate date not null,
+  inTime date  not null,
+  outTime date not null,
+  status char(1) not null);
+
+
+   create table login
+    (userId varchar2(30) unique,
+    psswd varchar2(20) not null,
+    userType varchar2(10) not null,
+    eId varchar2(5),
+    uDob date);
+
+
+ insert into login(userId,psswd,userType) values('admin','123','admin');
+
+
+
+ create table salary
+  (eId varchar2(5),
+  sMonth date,
+  sYear date,
+  basic number(8),
+  da number(8),
+  allowance number(8),
+  hra number(8),
+  total number(8),
+  gpf number(8),
+  gip number(5),
+  iTax number(8),
+  loan number(8),
+  totDed number(8),
+  netPay number(10)
+  );
+
+
+
+
